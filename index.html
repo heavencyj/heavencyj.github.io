@@ -1,7 +1,64 @@
-<!DOCTYPE html>
-<html>
-	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-	</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><title>Heaven Chen</title><meta name="viewport" content="width=device-width,initial-scale=1"><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"><link href="http://fonts.googleapis.com/css?family=Alegreya:400,700" rel="stylesheet" type="text/css"><style>html {
+  overflow-y: scroll;
+}
+a {
+  color: #808080;
+}
+a:hover {
+  display: inline-block;
+  font-weight: bold;
+  color: #333;
+}
+body{
+	font-family: 'Alegreya', serif;
+}
+.container {
+  font-size: 1.175em;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project {
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+.embed-responsive {
+	max-width: 640px;
+}</style></head><body><div style="text-align:center;border:0px;" class="navbar navbar-default"><div class="container-fluid"><div style="float:right;" class="navbar-header"><button data-toggle="collapse" data-target="#nav" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><h2 style="float:center;">Heaven Chen</h2><div id="nav" class="collapse navbar-collapse"><ul style="display:inline-block;float:none;" class="nav navbar-nav"><li><a href="#about" onclick="pageChange(&quot;about&quot;);">about</a></li><li><a href="#projects" onclick="pageChange(&quot;projects&quot;);">projects</a></li></ul></div></div></div><script>var pageChange = function (page) {
+  var pages = ['about','projects'];
+  if ($.inArray(page, pages) < 0) {
+    page = 'about';
+  }
+  pages.forEach(function (p) {
+    $('#'+p).hide();
+  });
+  $('#'+page).show();
+};   
+
+$(document).ready(function () {
+  pageChange(window.location.hash.substring(1));
+});</script><div class="container"><div id="about"><h3>about</h3><p>Why is my name <strong>Heaven</strong>? It's not from my mom or dad. They don't know much English.
+Fobs like to use weird words that have meanings rather than real English names.
+I am no exception. <strong>Heaven </strong>has great meanings and it actually sounds like a name.
+After the confusion phase, people tend to find it hard to forget.</p><p>I have a few hobbies. In winter, I am probably on the slopes in one of the resorts in 
+Lake Tahoe for most weekends. In summer, chances are I am living in a big tent with my friends
+somewhere in the woods. Outdoor stuffs are fun. After work, sometimes I shoot hoops with
+coworkers, sometimes I hit golf balls and sometimes I play random card games with friends. 
+San Francisco is a cool place with so many options and I am very glad I live here.</p><p>CS Bachelor and Master degree from Rice University in 2013. Software Engineer at
+Salesforce. bla bla bla... For all this boring stuff, Please check my <a href="http://www.linkedin.com/in/heavenychen">LinkedIn.</a></p></div><div id="projects" style="display:none;"><h3>projects</h3><div class="project"><h4>Plushy Pals - iPhone game. Jan 2013 to May 2013.</h4><p> 
+During my last semester in college, I made a fun iPhone game with two friends. It is kinda like the 
+popular running game Temple Run, but with cuter characters. 
+Thanks to the awesome artwork from <a href="http://linhtrando.com/">Linh Tran Do</a>, we have different maps
+featuring jungle, mountain, dessert and various characters including a monkey,
+a pig, a bear. Game play is simple: turn left/right and jump to avoid hitting 
+walls or obstacles; collect items to get bonus points and unlock new maps;
+the goal is to get as many points as possible before you hit something and die.</p><p>We didn't have the chance to put it in app store but here is the trailer. 
+You can also see the source code in my <a href="https://github.com/heavencyj">github.</a><div class="embed-responsive embed-responsive-16by9"><iframe width="420" height="315" src="https://www.youtube.com/embed/_ebPA0wSI5Y" class="embed-responsive-item"></iframe></div></p></div><div class="project"><h4> Inspira - Microsoft Imagine Cup 2011 Entry. Oct 2010 - Dec 2010</h4><p>During Grace Hopper Celebration in 2010, I learned about Microsoft Imagine Cup,
+a global student technology competition. The theme that year was to solve the world's
+tough problem. Me and two partners chose to focus on the lack female in the technology field.
+Back then the topic wasn't as hot as now and there weren't many good ways to connect
+women in the technology field. We decided to start with college students and build an
+windows phone app(it's a Microsoft sponsored competition) that connects female engineering 
+students to mentors and other peers. </p><p>Here is our competition video entry. We didn't go very far, but definitely a very
+good learning experience. It was my first time working sorta like a project manager as 
+well as the main developer.<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/Cv-z6m29sgM" class="embed-responsive-item"></iframe></div></p></div></div></div></body></html>

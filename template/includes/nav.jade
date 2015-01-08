@@ -1,0 +1,27 @@
+.navbar.navbar-default(style='text-align:center;border:0px;')
+    .container-fluid
+        .navbar-header(style='float:right;')
+          button.navbar-toggle.collapsed(data-toggle='collapse',data-target='#nav')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        h2(style='float:center;') Heaven Chen
+        #nav.collapse.navbar-collapse
+            ul.nav.navbar-nav(style='display:inline-block;float:none;')
+              li: a(href='#about',onclick='pageChange("about");') about
+              li: a(href='#projects',onclick='pageChange("projects");') projects
+  script.
+    var pageChange = function (page) {
+      var pages = ['about','projects'];
+      if ($.inArray(page, pages) < 0) {
+        page = 'about';
+      }
+      pages.forEach(function (p) {
+        $('#'+p).hide();
+      });
+      $('#'+page).show();
+    };   
+
+    $(document).ready(function () {
+      pageChange(window.location.hash.substring(1));
+    });
